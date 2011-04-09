@@ -1,2 +1,4 @@
 <h2>Restaurants Detail<h2>
-<%=render :partial=>'restaurant', :locals=>{:restaurant=>@restaurant}%>
+<%=render @restaurant%>
+
+<%= link_to '<< Back To List', restaurants_path%>
