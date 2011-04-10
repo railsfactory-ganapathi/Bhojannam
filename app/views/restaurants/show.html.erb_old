@@ -1,0 +1,4 @@
+<h2>Restaurants Detail<h2>
+<%=render @restaurant%>
+
+<%= link_to '<< Back To List', restaurants_path%>
