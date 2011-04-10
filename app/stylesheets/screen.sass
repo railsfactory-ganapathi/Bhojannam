@@ -5,11 +5,46 @@
 
 #header
   +container
+  h1
+    margin: 10px 0
+    +column(10)
+    a
+      text-decoration: none
+      font-size: 3em
+      color: #280
+      font-family: 'Pacifico', arial, serif
 #navigation
   +container
+  border-bottom: 2px solid #222
+  ul
+    margin-left: 5px
+    li
+      border-left: 2px solid #aaa
+      border-top: 2px solid #aaa
+      border-right: 2px solid #aaa
+      display: inline
+      padding: 3px
+      margin: 3px 5px
+      a
+        color: #333
+        text-decoration: none
+    li.selected
+      background-color: #222
+      padding: 5px
+      a
+        color: #eee
+    li:hover
+      padding: 10px
+
 #content
   +container
   #left
+    +column(17)
   #right
+    +column(6)
+    .sidebar_box
+      +column(5)
+      background-color: #ddd
+      height: 600px
 #footer
   +container
