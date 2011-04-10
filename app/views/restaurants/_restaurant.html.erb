@@ -2,6 +2,7 @@
 <h3><%=link_to restaurant.name, restaurant%></h3>
 <ul class="action_links">
 		<li><%=link_to "Edit", edit_restaurant_path(restaurant)%></li>
+		<li><%=link_to "Delete", restaurant_path(restaurant), :confirm=> "Are you sure to delete?", :method=>:delete%></li>
 	</ul>
 <p class="address"><%=restaurant.address%> </p>
 <p><%=restaurant.desc%></p>
